@@ -46,20 +46,20 @@ p {
   overflow: hidden;
 }
 .container {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -92,13 +92,23 @@ p {
 }
 
 .header-logo {
+  display: block;
+  padding: 16px 0;
+}
+/*
+.header-logo {
   padding: 24px 0;
   margin-right: 76px;
-}
-
+}*/
+/*
 .logo-span {
   color: #2e2f42;
-  line-height: 1.17;
+  line-height: 1.17
+}
+*/
+
+.header-logo .logo-span {
+  color: #2e2f42;
 }
 
 .bt-solid-menu {
@@ -110,7 +120,8 @@ p {
   display: block;
   fill: #2f2f37;
 }
-
+/* #endregion-default */
+/* #region-min-width: 768px */
 @media screen and (min-width: 768px) {
   .bt-solid-menu {
     display: none;
@@ -192,7 +203,7 @@ p {
     color: #404bbf;
   }
 }
-
+/* #region-min-width: 1158px */
 @media screen and (min-width: 1158px) {
   .header-logo {
     margin-right: 76px;
@@ -391,7 +402,7 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/mobile-people-office.png);
+    url(../images/mobail/mobile-people-office.jpg);
 }
 
 .hero-title {
@@ -436,7 +447,7 @@ p {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/dark-bg-mob@2x.jpg);
+      url(../images/mobail/mobile-people-office@x2.jpg);
   }
 }
 
@@ -449,7 +460,7 @@ p {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tab-people-office.png);
+      url(../images/tablet/tab-people-office.png);
   }
 
   .hero-title {
@@ -466,7 +477,7 @@ p {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/dark-bg-tab@2x.jpg);
+      url(../images/tablet/tab-people-office@2x.jpg);
   }
 }
 
@@ -479,7 +490,7 @@ p {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/laptop/people-office.jpg);
   }
 
   .hero-title {
@@ -493,7 +504,7 @@ p {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office@2x.jpg);
+      url(../images/laptop/people-office@2x.jpg);
   }
 }
 /* #endregion-HERO SECTION 1 */
